@@ -44,3 +44,16 @@ tabBtn.forEach((tab, index) => {
     tabCont[index].classList.add("active")
   })
 })
+
+/*popup*/
+const modal = document.querySelector("#modal");
+const modalCloseBtn = modal.querySelector(".close-button")
+const modalOpenBtn = document.querySelector(".modal-button");
+
+modalOpenBtn.addEventListener("click", () => {
+  modal.classList.add("active");
+})
+
+modalCloseBtn.addEventListener("click", () => {
+  modal.classList.remove("active");
+})
