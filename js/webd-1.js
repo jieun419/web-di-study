@@ -30,3 +30,17 @@ setInterval(() => {
 
   currentIndex = nextIndex
 }, 3000)
+
+/*tab menu*/
+const tabBtn = document.querySelectorAll(".board .tab-buttons > button");
+const tabCont = document.querySelectorAll(".board .tab-contents > div");
+
+tabBtn.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabBtn.forEach(tab => tab.classList.remove("active"));
+    tab.classList.add("active");
+
+    tabCont.forEach(cont => cont.classList.remove("active"));
+    tabCont[index].classList.add("active")
+  })
+})
