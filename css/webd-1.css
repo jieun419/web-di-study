@@ -156,3 +156,26 @@ button {
   flex: 1;
   background-color: #eee;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #999;
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #999;
+  padding: 20px;
+}
+
+.footer .copyright p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #eee;
+}
