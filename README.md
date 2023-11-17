@@ -33,7 +33,7 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    - css에서 `active` 클래스 유무로 작업하면 수월함
    - `classList.add`, `classList.remove` 활용하기
    ```js
-   addEventListener("onlick", 함수)
+   addEventListener("click", 함수)
    ```
 4. css로 스타일 작업하기
 5. js 기능 구현하기 (navmenu, slider)
