@@ -13,6 +13,13 @@ li {
 
 a {
   text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 /* style */
@@ -96,9 +103,48 @@ a {
   display: flex;
 }
 
-.contents .notice {
+.contents .board {
   flex: 1;
-  background-color: #eee;
+  padding: 20px;
+}
+
+.contents .board .tab-buttons {
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.contents .board .tab-buttons button {
+  font-size: 16px;
+  color: #999;
+}
+
+.contents .board .tab-buttons button.active {
+  font-weight: bold;
+  color: #000;
+}
+
+.contents .board .tab-contents ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contents .board .tab-contents ul li a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contents .board .tab-contents div {
+  display: none;
+}
+
+.contents .board .tab-contents div.active {
+  display: block;
 }
 
 .contents .banner {
