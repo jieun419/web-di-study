@@ -71,15 +71,15 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    sliderCont.appendChild(sliderClone) // 맨 뒤에 배치하기
 
    // 2. 끝까지 도달했을 때 다시 처음으로 돌리기
-  if (currentIndex === slider.length) {
-    setTimeout(() => {
-    // 스타일 초기화
-      sliderCont.style.marginLeft = "0";
-      sliderCont.style.transition = "0s";
-    // index 초기화
-      currentIndex = 0;
-    }, 700)
-  }
+    if (currentIndex === slider.length) {
+      setTimeout(() => {
+      // 스타일 초기화
+        sliderCont.style.marginLeft = "0";
+        sliderCont.style.transition = "0s";
+      // index 초기화
+        currentIndex = 0;
+      }, 700)
+    }
    ```
 
 ## style 기본 세팅 필수
