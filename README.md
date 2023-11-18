@@ -5,15 +5,20 @@
 
 ## 실기 시험 중 주요 사항
 - 마크업 준수 (header, footer, article, section, nav, main 등)
-- 접근성 준수 (img 태그에 alt 속성 필수 등)
-  - 감점 사유 중 하나 
+  - ⭐️ `article`, `section` 태그에는 **`h1~h6(제목)`** 태그가 포함 되어야 한다. (감점 요인 중 하나)
+- 접근성 준수
+  - ⭐️ `img` 태그에 **`alt 속성`** 필수로 넣어준다.(감점 요인 중 하나)
+  - ⭐️ 로고, 메뉴, 배너 등은 **`a` 태그로 감싸고 `href="#"`으로 작성**해 tab할 경우 자연스레 이동 되어야 한다. (감점 요인 중 하나)
 - **⭐️ 슬라이드 배너 구현 필수** (구현하지 못 할 경우 바로 **`실격 처리`** 됨)
   - 기능 구현 없이 하나의 이미지만 배치했을 경우 실격 처리 됨
-- 기능 구현 시 JavaScript, Jquery, CSS 등을 이용해 구현해야 함
+- 기능 구현 시 JavaScript, Jquery, CSS 등을 활용해 구현해야 함
   - 주어진 시간이 4시간으로 시간 엄수 필수 
-- 페이지(런타임) 오류가 나면 안 됨 
+- 페이지 오류 나면 안 됨
+  - [W3C validator](https://validator.w3.org/) 에서 html 파일 검사 시 `[ERROR]` 날 경우 감점
+  - [W3C validator](https://validator.w3.org/) 에서 css 파일 검사 시 `[ERROR]` 날 경우 감점
+  - 콘솔 창에서 error 날 경우 감점
 - 파일 용량 제한 있음
-  - 파일 용량 초과시 실격
+  - 파일 용량(5MB) 초과시 실격
  
 ## 작업 요구 사항
 - 레이아웃 잡기
@@ -46,10 +51,18 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    ```js
    setInterval(()=> {
      //반복할 함수 작성하기
-   }, 초단위)
-   ```
-   
+   }, 3000)
 
+   // fade 효과
+   style.opacity = "0";
+   style.opacity = "1";
+
+   // 왼/오른쪽으로 이동
+   style.marginLeft = "-100%"
+
+   // 위/아래로 이동
+   style.marginTop = "-100%"
+   ```
 
 ## style 기본 세팅 필수
 ```css
