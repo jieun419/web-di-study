@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px;
+  background-color: #194293;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: #051b49;
+  left: 0;
+  top: 100px;
+  z-index: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+
+.header.active::after {
+  height: 150px;
+}
+
+.header .logo {
+  margin-bottom: 10px;
+}
+
+.header nav {
+  position: relative;
+  z-index: 1;
+}
+
+.header nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.header nav > ul > li {
+  position: relative;
+}
+
+.header nav > ul > li > a {
+  width: 100%;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header nav > ul > li:hover > a {
+  background-color: #051b49;
+}
+
+.header nav .submenu {
+  width: 100%;
+  background-color: #051b49;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.header nav .submenu.active {
+  height: 150px;
+}
+
+.header nav .submenu > li {
+  width: 100%;
+  text-align: center;
+}
+
+.header nav .submenu > li > a {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+.header nav .submenu > li > a:hover {
+  background-color: #0b265d;
+}
+
+.slider-wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider-cont {
+  display: flex;
+}
+
+.contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.contents .notice,
+.contents .gallery {
+  padding: 20px;
+}
+
+.contents .notice h3,
+.contents .gallery h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.contents .notice {
+  width: 100%;
+  flex: 1;
+  background-color: #f1f1f1;
+}
+
+.contents .notice ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contents .notice ul li a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.contents .notice ul li a:hover {
+  color: #999;
+}
+
+.contents .gallery {
+  width: 100%;
+  flex: 1;
+  background-color: #fff;
+}
+
+.contents .gallery ul {
+  display: flex;
+  gap: 5px;
+}
+
+.contents .gallery ul li a:hover {
+  opacity: 0.8;
+}
+
+.contents .gallery ul li a img {
+  width: 100%;
+}
+
+.contents .banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: url("../images/webd-1/banner-1.jpg");
+}
+
+.contents .banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.4;
+}
+
+.contents .banner .text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.contents .banner .text h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contents .banner .text a {
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 15px;
+  border-radius: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #999;
+  padding: 20px;
+}
+
+.footer .left-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .left-wrap .footer-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .left-wrap .footer-info p {
+  font-size: 14;
+  color: #666;
+}
+
+.footer .right-wrap .family-site {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  padding: 5px 10px;
+}
+
+.modal-popup {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.modal-popup .modal-cont {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border: 5px solid #051b49;
+}
+
+.modal-popup .modal-cont h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.modal-popup .modal-cont p {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.modal-popup .modal-cont .modal-close {
+  font-size: 15px;
+  color: #fff;
+  background-color: #051b49;
+  padding: 5px 15px;
+}
