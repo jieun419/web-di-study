@@ -59,9 +59,27 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
 
    // 왼/오른쪽으로 이동
    style.marginLeft = "-100%"
+   style.transition = "all 0.6s"
 
    // 위/아래로 이동
    style.marginTop = "-100%"
+   style.transition = "all 0.6s"
+
+   // 왼/오/위/아래 이동 시 필수 사항
+   // 1. 맨 뒤에 앞에 요소 붙여 두기
+   const sliderClone = sliderCont.firstElementChild.cloneNode(true); // 노드 복사하기
+   sliderCont.appendChild(sliderClone) // 맨 뒤에 배치하기
+
+   // 2. 끝까지 도달했을 때 다시 처음으로 돌리기
+  if (currentIndex === slider.length) {
+    setTimeout(() => {
+    // 스타일 초기화
+      sliderCont.style.marginLeft = "0";
+      sliderCont.style.transition = "0s";
+    // index 초기화
+      currentIndex = 0;
+    }, 700)
+  }
    ```
 
 ## style 기본 세팅 필수
