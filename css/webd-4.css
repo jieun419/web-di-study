@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside {
+  width: 200px;
+  background-color: #f9a919;
+}
+
+.aside .logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside nav {
+  height: 100%;
+  padding: 0 20px;
+}
+
+.aside nav > ul > li {
+  position: relative;
+  border-bottom: 1px solid #ffc761;
+}
+
+.aside nav > ul > li:hover > a {
+  background-color: #e69b14;
+}
+
+.aside nav ul > li > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.aside nav ul > li:last-child {
+  border-bottom: none;
+}
+
+.aside nav > ul > li > a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.aside nav .submenu {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.6s;
+}
+
+.aside nav .submenu > li > a {
+  color: #333;
+  font-size: 16px;
+}
+
+.aside nav .submenu > li > a:hover {
+  background-color: #ffe5b5;
+}
+
+.main {
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main article {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main article .slider-wrap {
+  width: calc(100% - 230px);
+  height: 100%;
+  background-color: #777;
+  overflow: hidden;
+}
+
+.main article .slider-wrap .slider-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main article .slider-wrap .slider {
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.main article .slider-wrap .slider.s1 {
+  background-image: url("https://webstoryboy.github.io/webd2023/site/siteD/images/slider01.jpg");
+}
+
+.main article .slider-wrap .slider.s2 {
+  background-image: url("https://webstoryboy.github.io/webd2023/site/siteD/images/slider02.jpg");
+}
+
+.main article .slider-wrap .slider.s3 {
+  background-image: url("https://webstoryboy.github.io/webd2023/site/siteD/images/slider03.jpg");
+}
+
+.main article .slider-wrap .slider .text {
+  position: relative;
+  padding: 20px;
+  z-index: 1;
+}
+
+.main article .slider-wrap .slider .text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.main article .slider-wrap .slider .text h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.main article .slider-wrap .slider .text p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.main article .banner {
+  background-image: url("https://webstoryboy.github.io/webd2023/site/siteD/images/banner.jpg");
+  width: 230px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main article .banner .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main article .banner .text h3 {
+  color: #fff;
+  font-size: 28px;
+}
+
+.main article .banner .text a {
+  color: #333;
+  background-color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+.main .contents {
+  display: flex;
+  height: 250px;
+}
+
+.main .contents .notice,
+.main .contents .gallery {
+  padding: 20px;
+  flex: 1;
+}
+
+.main .contents .notice h3,
+.main .contents .gallery h3 {
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.main .contents .notice {
+  background-color: #f1f1f1;
+}
+
+.main .contents .notice ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .contents .notice ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.main .contents .notice ul li a {
+  display: block;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main .contents .notice ul li a:hover {
+  text-decoration: underline;
+}
+
+.main .contents .gallery {
+  background-color: #fff;
+}
+
+.main .contents .gallery ul {
+  display: flex;
+  gap: 10px;
+}
+
+.main .contents .gallery ul li {
+  flex: 1;
+}
+
+.main .contents .gallery ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.main .contents .gallery ul li a:hover img {
+  opacity: 0.8;
+}
+
+.main .contents .gallery ul li a img {
+  width: 100%;
+}
+
+.main .contents .gallery ul li a span {
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #aaa;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer .logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .copyright {
+  width: calc(100% - 430px);
+}
+
+.footer .copyright p {
+  line-height: 1.5;
+}
+
+.footer .family-site {
+  width: 230px;
+  padding: 20px;
+}
+
+.footer .family-site select {
+  width: 100%;
+  padding: 10px;
+}
+
+.modal {
+  position: fixed;
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  padding: 30px;
+  border: 5px solid #f9a919;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal .modal-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.modal .modal-cont h3 {
+  font-size: 25px;
+}
+
+.modal .modal-cont p {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.modal .button-wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.modal .button-wrap .modal-close {
+  font-size: 16px;
+  color: #fff;
+  background-color: #f9a919;
+  padding: 8px 25px;
+  border-radius: 50px;
+}
