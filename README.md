@@ -62,7 +62,7 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    style.transition = "all 0.6s"
 
    // 위/아래로 이동
-   style.marginTop = "-100%"
+   style.marginTop = "슬라이드 높이px"
    style.transition = "all 0.6s"
 
    // 왼/오/위/아래 이동 시 필수 사항
