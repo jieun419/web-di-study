@@ -31,6 +31,14 @@
 ## 예시 화면
 https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-8718-0ef71aa8c4c6
 
+## 작업 리스트
+[사이트 유형 - A1](https://github.com/jieun419/web-di-study/blob/main/html/webd-1.html)
+[사이트 유형 - A2](https://github.com/jieun419/web-di-study/blob/main/html/webd-2.html)<br/>
+[사이트 유형 - B1](https://github.com/jieun419/web-di-study/blob/main/html/webd-3.html)
+[사이트 유형 - B2](https://github.com/jieun419/web-di-study/blob/main/html/webd-4.html)
+[사이트 유형 - B3](https://github.com/jieun419/web-di-study/blob/main/html/webd-5.html)<br/>
+[메뉴 기능 모음집](https://github.com/jieun419/web-di-study/blob/main/html/webd-m.html)
+
 ## 작업 순서
 1. 레이아웃 잡기
 2. 이미지 작업하기 (배너, 로고 등)
