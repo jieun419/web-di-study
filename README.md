@@ -49,6 +49,11 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    addEventListener("click", 함수)
    ```
 4. css로 스타일 작업하기
+   - 상단에 '@charset "UTF-8";' 작성하기
+   ```css
+   @charset "UTF-8";
+   *{}
+   ```
 5. js 기능 구현하기 (navmenu, slider)
    - **navmenu :** `this`, `style.height` 속성 사용하기
    - mouseenter, mouseleave도 있지마 시험지에 요구하는 마우스 이벤트 사용하기
@@ -93,6 +98,9 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
 
 ## style 기본 세팅 필수
 ```css
+/* 인코딩 */
+@charset "UTF-8";
+
 /* reset */
 * {
   margin: 0;
