@@ -51,9 +51,10 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
 4. css로 스타일 작업하기
 5. js 기능 구현하기 (navmenu, slider)
    - **navmenu :** `this`, `style.height` 속성 사용하기
+   - mouseenter, mouseleave도 있지마 시험지에 요구하는 마우스 이벤트 사용하기
    ```js
-   addEventListener("mounseenter", 함수)
-   addEventListener("mounseleave", 함수)
+   addEventListener("mouseover", 함수)
+   addEventListener("mouseout", 함수)
    ```   
    - **slider :** `setInterval`, 배열 구조를 생각해 작업하기 (ex - arr[0])
    ```js
