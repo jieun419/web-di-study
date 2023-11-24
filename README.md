@@ -37,7 +37,8 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
 [사이트 유형 - B1](https://github.com/jieun419/web-di-study/blob/main/html/webd-3.html)
 [사이트 유형 - B2](https://github.com/jieun419/web-di-study/blob/main/html/webd-4.html)
 [사이트 유형 - B3](https://github.com/jieun419/web-di-study/blob/main/html/webd-5.html)<br/>
-[메뉴 기능 모음집](https://github.com/jieun419/web-di-study/blob/main/html/webd-m.html)
+[메뉴 기능 모음집](https://github.com/jieun419/web-di-study/blob/main/html/webd-m.html)<br/>
+[슬라이드 기능 모음집 - Atype](https://github.com/jieun419/web-di-study/blob/main/html/webd-sa.html)<br/>
 
 ## 작업 순서
 1. 레이아웃 잡기
