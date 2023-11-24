@@ -66,7 +66,7 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    style.opacity = "1";
 
    // 왼/오른쪽으로 이동
-   style.marginLeft = "-100%"
+   style.marginLeft = "-슬라이드 넓이%"
    style.transition = "all 0.6s"
 
    // 위/아래로 이동
@@ -97,7 +97,12 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
   font-family: "맑은 고딕", sans-serif; /*폰트 스타일 별로라서 추가함*/
+}
+
+body {
+  background-color: #fff;
 }
 
 ul,li {
@@ -106,7 +111,6 @@ ul,li {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 button {
