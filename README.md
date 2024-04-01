@@ -1,7 +1,6 @@
 # 웹 디자인 기능사 실기 준비
 - 시간 단축을 위해 `JQuery`를 배우기 보단 알고 있는 언어 **`JavaScript`** 로 기능 구현할 예정입니다.
-- https://www.youtube.com/watch?v=gm4YGPv6jR0&list=PL4UVBBIc6giK95pWwwoTQP82aI9iGNo-g&index=1
-- 해당 강의 기준으로 진행될 예정입니다.
+- https://www.youtube.com/watch?v=gm4YGPv6jR0&list=PL4UVBBIc6giK95pWwwoTQP82aI9iGNo-g&index=1 해당 강의 기준으로 공부했습니다.
 
 ## 실기 시험 중 주요 사항
 - 마크업 준수 (header, footer, article, section, nav, main 등)
@@ -57,7 +56,7 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
    ```
 5. js 기능 구현하기 (navmenu, slider)
    - **navmenu :** `this`, `style.height` 속성 사용하기
-   - mouseenter, mouseleave도 있지마 시험지에 요구하는 마우스 이벤트 사용하기
+   - mouseenter, mouseleave도 있지만 시험지에 요구하는 마우스 이벤트 사용하기
    ```js
    addEventListener("mouseover", 함수)
    addEventListener("mouseout", 함수)
@@ -108,7 +107,7 @@ https://github.com/jieun419/web-di-study/assets/109754988/fb037f0a-167b-4e98-871
   padding: 0;
   box-sizing: border-box;
   color: #333;
-  font-family: "맑은 고딕", sans-serif; /*폰트 스타일 별로라서 추가함*/
+  font-family: "맑은 고딕", sans-serif; /*폰트 스타일 별로라서 추가함 - 굳이 추가할 이유는 없음*/
 }
 
 body {
